@@ -5,7 +5,7 @@ import com.mathiric.house.domain.Employee;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-class HouseController {
+public class HouseController {
 
     public HouseController() {
     }
