@@ -1,0 +1,20 @@
+package com.mathiric.house.server;
+
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.context.annotation.Configuration;
+
+import java.util.Map;
+
+@Configuration
+@ConfigurationProperties(prefix = "server")
+public class ServerConfig {
+
+    private Address address;
+    private Map<String, String> resourcesPath;
+
+    public Address getAddress() { return address; }
+    public void setAddress(Address address) {this.address = address;}
+    public Map<String, String> getResourcesPath() {return resourcesPath;}
+    public void setResourcesPath(Map<String, String> resourcesPath) {this.resourcesPath = resourcesPath;}
+
+}
