@@ -1,7 +1,10 @@
 package com.mathiric.house.server;
 
+import javax.validation.constraints.NotBlank;
+
 public class Address {
 
+    @NotBlank
     private String ip;
 
     public String getIp() { return ip; }

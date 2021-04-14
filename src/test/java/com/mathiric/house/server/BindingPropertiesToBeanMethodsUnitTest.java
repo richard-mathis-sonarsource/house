@@ -25,4 +25,5 @@ class BindingPropertiesToBeanMethodsUnitTest {
         assertEquals("192.168.0.2", serverConfig.getAddress().getIp());
 
         // other assertions...
-    }}
+    }
+}
